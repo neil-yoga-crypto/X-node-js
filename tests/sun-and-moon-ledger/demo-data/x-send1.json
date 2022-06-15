@@ -1,0 +1,14 @@
+{
+    "block": {
+        "addr": "genesis_1", 
+        "balance": [{"c_id":993, "real":133000000,"neil_1":200000}],
+        "x":1,
+        "y": 0,
+        "seq": 1,
+        "prev":{},
+        "ver": 1,
+        "reps": {"localhost:3001":100}
+    },
+  	"sign":"[replace]",
+  	"pow": "[replace]"
+  }

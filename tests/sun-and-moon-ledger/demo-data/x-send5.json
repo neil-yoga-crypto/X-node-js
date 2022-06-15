@@ -1,0 +1,14 @@
+{
+    "block": {
+        "addr": "sea_4", 
+        "balance": [{"c_id":993, "real":12500,"beach_5":12500}],
+        "x":2,
+        "y": 2,
+        "seq": 0,
+        "prev":{},
+        "ver": 1,
+        "reps": {"localhost:3001":100}
+    },
+  	"sign":"[replace]",
+  	"pow": "[replace]"
+  }
