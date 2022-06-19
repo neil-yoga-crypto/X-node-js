@@ -3,6 +3,13 @@ X: Simply The Best Possible Digital Currency with Zero Fees. Supports Multiple C
 
 (Currently in initial testing/play phase, testnet launching as soon as possible) 
 
+#### Test the Crypto Playground (wallet creation, sign and encrypt)
+
+```
+node tests/cryptoplayground/play.js
+```
+
+
 #### Test the X Ledger Sun & Moon Grid!
 
 ![sunmoon](tests/sun-and-moon-ledger/sunandmoon.png)
