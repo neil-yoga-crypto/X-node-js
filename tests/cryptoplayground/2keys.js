@@ -5,6 +5,7 @@ const nacl = require('tweetnacl');
 
 // convert functions
 function toHex(bufferOrStr) {
+
     return Buffer.from(bufferOrStr).toString('hex'); 
 }
 
@@ -26,6 +27,8 @@ async function getKeys() {
 async function getKeysBySeed(seed) {
     const keypair = nacl.sign.keyPair.fromSeed(seed);
   	const boxKeypair = nacl.box.keyPair.fromSecretKey(seed);
+  
+  	// address becomes concat of both signing and encryption public keys
     let address = toHex(keypair.publicKey) + '.' + toHex(boxKeypair.publicKey);
   	return {
       		seed:toHex(seed),
@@ -38,7 +41,7 @@ async function getKeysBySeed(seed) {
 }
 
 let freshKeypair = await getKeys();
-console.log('keys',freshKeypair);
+console.log('X Wallet (2 keys)',freshKeypair);
 
 
 
@@ -79,10 +82,9 @@ function decrypt(nonceHex,boxHex,theirPublicKey,mySecretKey) {
 }
 
 let freshKeypair2 = await getKeys();
-console.log('keys2',freshKeypair2);
 
 // simple hex encryption
-let messageHex = toHex('hello world');
+let messageHex = toHex('Keep secret');
 let boxNonceHex = encrypt(messageHex, freshKeypair2.enc_public, freshKeypair.enc_secret);
 console.log("encrypted", boxNonceHex);
 
