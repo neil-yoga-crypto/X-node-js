@@ -3,6 +3,8 @@ X: Simply The Best Possible Digital Currency with Zero Fees. Supports Multiple C
 
 (Currently in initial testing/play phase, testnet launching as soon as possible) 
 
+Join us on Reddit for Daily Updates: https://www.reddit.com/r/xcurrencyecosystem
+
 #### Test the Crypto Playground (wallet creation, sign and encrypt)
 
 ```
